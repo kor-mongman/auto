@@ -44,7 +44,7 @@ while True:
         end_time = start_time + datetime.timedelta(days=1)
         
         if start_time < now < end_time - datetime.timedelta(seconds=20):
-            target_price = get_target_price("KRW-ETH", 0.7)
+            target_price = get_target_price("KRW-ETH", 0.2)
             current_price = get_current_price("KRW-ETH")
             if target_price < current_price:
                 krw = get_balance("KRW")
@@ -71,7 +71,7 @@ while True:
         end_time = start_time + datetime.timedelta(days=1)
         
         if start_time < now < end_time - datetime.timedelta(seconds=30):
-            target_price = get_target_price("KRW-BCH", 0.8)
+            target_price = get_target_price("KRW-BCH", 0.2)
             current_price = get_current_price("KRW-BCH")
             if target_price < current_price:
                 krw = get_balance("KRW")
